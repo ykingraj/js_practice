@@ -22,6 +22,7 @@ console.log(b)
 console.log(a)
 
 // here the value of a = 1 even after b takes referance from a and then assigned new value as 2
+// happens same for all primitive datatypes
 
 let l = [1,2,3,4,5]
 console.log(l)
@@ -32,3 +33,4 @@ l[3] = 10
 console.log(l)
 
 // here the value of the l[3] is taken as refferance and the changes made to it, make changes to the actual array as the memory location is taken as refferance not just the copy.
+// happnes same for all non primitive datatypes.
