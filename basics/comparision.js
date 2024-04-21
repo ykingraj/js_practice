@@ -6,7 +6,7 @@ console.log ( 2 >= 0) //true
 
 /*
 
-== and === are known as equality check operators 
+== and ===(also known as strict check) are known as equality check operators 
 
 < , > , <= , >= are know as comparision operators
 
