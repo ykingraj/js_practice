@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Get value from input box</title>
+</head>
+<body>
+    <input type="input" id= "box1">
+    <button type ="button" onclick="getvalue()"> SUBMIT </button>
+    <p id="valueout">    </p>
+    <script>
+        function getvalue(){
+            let valuein = document.getElementById("box1")
+            console.log (valuein)
+            document.getElementById("valueout").innerHTML = valuein.value
+            return valuein
+        }
+
+
+    </script>
+
+</body>
+</html>
