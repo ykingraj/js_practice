@@ -4,23 +4,40 @@
         <title>Get value from input box</title>
 </head>
 <body>
-    
+    <h1 id="heading">Testing page for</h1>
+
     <input type="input" id= "box1">
     <button type ="button"onclick="getvalue()"> Submit </button>
     <p id="valueout"> </p>
 
+    <p id="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, veritatis.</p>
+    <button type ="button"onclick="colorchange()"> Change </button>
+    <br><br><br>
+    <button type ="button"onclick="addpara()"> add paragraph </button>
+
+    
     <script>
         function getvalue()
         {
             let valuein = document.getElementById("box1")
-            console.log (valuein)
             document.getElementById("valueout").innerHTML = "the number entered is " + valuein.value
+        }
+
+        function colorchange()
+        {
+            let color = document.getElementById("color")
+            color.style.color = "red"
+        }
+
+        function addpara()
+        {
+            const new_para = document.createElement('p')
+            new_para.textContent = 'New paragraph added'
+            document.body.appendChild(new_para)
         }
     </script>
     <! --
-    const new_para = document.createElement('p')
-    new_para.textContent = 'New paragraph'
-    document.body.appendChild(new_para)
+    
     ---->
 </body>
 </html>
