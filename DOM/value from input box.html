@@ -6,7 +6,7 @@
 <body>
     
     <input type="input" id= "box1">
-    <button type ="button" onclick="getvalue()"> SUBMIT </button>
+    <button type ="button"onclick="getvalue()"> Submit </button>
     <p id="valueout">    </p>
 
     <script>
@@ -14,7 +14,7 @@
         {
             let valuein = document.getElementById("box1")
             console.log (valuein)
-            document.getElementById("valueout").innerHTML = valuein.value
+            document.getElementById("valueout").innerHTML = "the number entered is " + valuein.value
             return valuein
         }
     </script>
