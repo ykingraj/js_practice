@@ -12,15 +12,25 @@
 
     <p id="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, veritatis.</p>
     <button type ="button"onclick="colorchange()"> Change </button>
+    
     <br><br><br>
+    
     <button type ="button"onclick="addpara()"> add paragraph </button>
 
     
     <script>
         function getvalue()
         {
-            let valuein = document.getElementById("box1")
-            document.getElementById("valueout").innerHTML = "the number entered is " + valuein.value
+            let x = document.getElementById("box1").value
+            if (x == "") {
+                alert("Name must be filled out")
+                return false;
+            }
+            else{
+                alert ("thankyou")
+                let valuein = document.getElementById("box1")
+                document.getElementById("valueout").innerHTML = "the number entered is " + valuein.value
+            }
         }
 
         function colorchange()
