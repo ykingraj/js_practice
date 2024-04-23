@@ -15,7 +15,11 @@
             let valuein = document.getElementById("box1")
             console.log (valuein)
             document.getElementById("valueout").innerHTML = "the number entered is " + valuein.value
-            return valuein
+            
+            const new_para = document.createElement('p');
+            new_para.textContent = 'New paragraph';
+            document.body.appendChild(new_para);
+
         }
     </script>
 

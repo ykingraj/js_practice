@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>doc2</title>
-</head>
-<body>
+  </head>
+  <body>
 
-<h2>JavaScript Validation</h2>
+    <h2>Value check</h2>
 
-<form>
-  Name: <input type="text" id="fname">
-  <input type="submit" value="Submit" onclick = "validateForm()">
-</form>
+    Name: <input type="text" id="fname">
+    <input type="submit" value="Submit" onclick = "validateForm()">
 
-<script>
-    function validateForm() {
-      let x = document.getElementById("fname").value;
-      if (x == "") {
-        alert("Name must be filled out");
-        return false;
+    <script>
+      function validateForm() {
+        let x = document.getElementById("fname").value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+        else{
+          alert ("thankyou")
+        }
       }
-      else{
-        alert ("thankyou")
-      }
-    }
     </script>
-</body>
+  </body>
 </html>
