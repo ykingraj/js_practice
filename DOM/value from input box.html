@@ -7,28 +7,31 @@
     <h1 id="heading">Testing page for</h1>
 
     <input type="input" id= "box1">
-    <button type ="button"onclick="getvalue()"> Submit </button>
+    <button type ="button" onclick="getvalue()"> Submit </button>
+    <br>
     <p id="valueout"> </p>
 
-    <p id="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, veritatis.</p>
-    <button type ="button"onclick="colorchange()"> Change </button>
+    <p id="color">JavaScript often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.[10]</p>
+
+    <button type ="button" onclick="colorchange()"> Change </button>
     
     <br><br><br>
     
     <button type ="button"onclick="addpara()"> add paragraph </button>
 
-    
     <script>
         function getvalue()
         {
             let x = document.getElementById("box1").value
             if (x == "") {
-                alert("Name must be filled out")
+                alert("Number must be filled out")
                 return false;
             }
             else{
                 alert ("thankyou")
+
                 let valuein = document.getElementById("box1")
+
                 document.getElementById("valueout").innerHTML = "the number entered is " + valuein.value
             }
         }
@@ -36,18 +39,17 @@
         function colorchange()
         {
             let color = document.getElementById("color")
-            color.style.color = "red"
+            color.style.color = "blue"
         }
 
         function addpara()
         {
             const new_para = document.createElement('p')
-            new_para.textContent = 'New paragraph added'
+            new_para.textContent = 'New para added'
+            
             document.body.appendChild(new_para)
         }
     </script>
-    <! --
-    
-    ---->
+
 </body>
 </html>
