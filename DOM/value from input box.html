@@ -7,7 +7,7 @@
     
     <input type="input" id= "box1">
     <button type ="button"onclick="getvalue()"> Submit </button>
-    <p id="valueout">    </p>
+    <p id="valueout"> </p>
 
     <script>
         function getvalue()
@@ -15,13 +15,12 @@
             let valuein = document.getElementById("box1")
             console.log (valuein)
             document.getElementById("valueout").innerHTML = "the number entered is " + valuein.value
-            
-            const new_para = document.createElement('p');
-            new_para.textContent = 'New paragraph';
-            document.body.appendChild(new_para);
-
         }
     </script>
-
+    <! --
+    const new_para = document.createElement('p')
+    new_para.textContent = 'New paragraph'
+    document.body.appendChild(new_para)
+    ---->
 </body>
 </html>
