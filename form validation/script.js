@@ -1,27 +1,17 @@
 
 function validateForm() {
     const name = document.getElementById("name").value
-
     const address = document.getElementById("address").value
-
     const email = document.getElementById("email").value
-
     const password = document.getElementById("password").value
-
     const subject = document.getElementById("subject").value
-
     const agree = document.getElementById("agree").checked
 
     const nameError =document.getElementById("name-error")
-
     const addressError = document.getElementById("address-error")
-
     const emailError = document.getElementById("email-error")
-
     const passwordError = document.getElementById("password-error")
-
     const subjectError = document.getElementById("subject-error")
-
     const agreeError = document.getElementById("agree-error")
 
     let isValid=true
@@ -59,7 +49,6 @@ function validateForm() {
     if (isValid==true) {
         alert ("Form filled successfully")
     }
-
 
     return isValid
 }
