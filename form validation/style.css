@@ -17,10 +17,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"],
-input[type="password"],
-select,
-textarea {
+input[type="text"], input[type="password"], select, textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -39,18 +36,13 @@ select {
     box-sizing: border-box;
     font-size: 16px;
     background-color: #fff;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
 }
 
 textarea {
     resize: vertical;
 }
 
-input[type="submit"],
-input[type="reset"],
-input[type="checkbox"] {
+input[type="submit"], input[type="reset"], input[type="checkbox"] {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -60,9 +52,7 @@ input[type="checkbox"] {
     font-size: 16px;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="checkbox"]:hover {
+input[type="submit"]:hover, input[type="reset"]:hover, {
     background-color: #0056b3;
 }
 
@@ -71,6 +61,7 @@ input[type="checkbox"]:hover {
     font-size: 14px;
     margin-top: 5px;
 }
-.footer{
-    text-size-adjust:4px ;
+.footer {
+    font-size: 0.7rem;
+    color: red;
 }
