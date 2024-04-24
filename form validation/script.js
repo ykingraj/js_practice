@@ -30,23 +30,23 @@ function validateForm() {
         "agree-error"
     )
 
-    nameError.textContent = ""
-    addressError.textContent = ""
-    emailError.textContent = ""
-    passwordError.textContent = ""
-    subjectError.textContent = ""
-    agreeError.textContent = ""
+    //nameError.textContent = ""
+    //addressError.textContent = ""
+    //emailError.textContent = ""
+    //passwordError.textContent = ""
+    //subjectError.textContent = ""
+    //agreeError.textContent = ""
 
-    let isValid = true
+    //let isValid = true
 
     if (name === "") {
-        nameError.textContent =
+        nameError.innerText =
             "Please enter your name properly."
         isValid = false
     }
 
     if (address === "") {
-        addressError.textContent =
+        addressError.innerHTML =
             "Please enter your address."
         isValid = false
     }
