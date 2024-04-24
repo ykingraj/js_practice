@@ -24,5 +24,3 @@ while (w<=al)
 console.log (sl[0]+ " is the maximum value")
 console.log (sl[sl.length-1]+ " is the minimum value")
 console.log (sl)
-
-
