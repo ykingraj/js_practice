@@ -15,12 +15,12 @@ while (w<=al)
             maxx = a[i]
             c = i   
         }
-        
     }   
     sl.push(maxx)
     a.splice(c,1)
   w++
 }
+
 console.log (sl[0]+ " is the maximum value")
 console.log (sl[sl.length-1]+ " is the minimum value")
 
