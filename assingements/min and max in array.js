@@ -1,4 +1,4 @@
-let a = [19,29,33,24,5,8]
+let a = [99,58,12,7,45,66,78,54,4,0,55]
 let maxx = a[0]
 let al = a.length-1
 let c
@@ -23,5 +23,6 @@ while (w<=al)
 
 console.log (sl[0]+ " is the maximum value")
 console.log (sl[sl.length-1]+ " is the minimum value")
+console.log (sl)
 
 
