@@ -30,15 +30,6 @@ function validateForm() {
         "agree-error"
     )
 
-    //nameError.textContent = ""
-    //addressError.textContent = ""
-    //emailError.textContent = ""
-    //passwordError.textContent = ""
-    //subjectError.textContent = ""
-    //agreeError.textContent = ""
-
-    //let isValid = true
-
     if (name === "") {
         nameError.innerText =
             "Please enter your name properly."
