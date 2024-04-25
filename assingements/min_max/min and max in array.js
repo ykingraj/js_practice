@@ -1,10 +1,10 @@
 let a = [99,58,12,7,45,66,78,54,4,0,]
 let decending_array = []
+let assending_array = []
 let maxx
 let c
 let w = 0
 let al = a.length
-let assending_array = []
 
 while (w<=al-1)
 {
