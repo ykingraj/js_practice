@@ -29,9 +29,9 @@ function funsub() {
     
 }
 
-function clear()
+function clear(a)
 {
-    val = "0"
+    val = a
     document.getElementById("result").innerText= val
 
 }
