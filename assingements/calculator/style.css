@@ -43,3 +43,15 @@
 #clear:hover{
     background-color: red;
 }
+
+h1 {
+    color: blue;
+}
+
+body{
+    background-color: cyan  ;
+}
+
+#result{
+    background-color: white;
+}
