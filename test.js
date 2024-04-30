@@ -1,6 +1,6 @@
-let stm = [1,2,3,4]
+let stm = [5,2,5,5]
 let stmlen = stm.length
-let opt = ["+","-","+"]
+let opt = ["*","+","/"]
 let optlen = opt.length
 let ss 
 let oo
@@ -9,7 +9,7 @@ let c1 = 0
 let c2 = 1
 
 
-for (let s = 0; s <= (stmlen-1); s++ ){
+for (let s = 0; s <= (stmlen-2); s++ ){
 
     while( s <= stmlen-1 && c2< stm.length){
         ss = stm[c2]
@@ -58,7 +58,7 @@ for (let s = 0; s <= (stmlen-1); s++ ){
     c1++
     c2++
 }
-//console.log(val);
+console.log(val);
 
 
 
