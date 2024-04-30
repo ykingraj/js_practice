@@ -59,3 +59,4 @@ console.log (typeof Boolean(nul))
 console.log ( 1 + 2 + 3 )   // output 6
 console.log ( '1' + 2 + 3 ) // output 123
 console.log ( 1 + 2 + '3' ) // output 33
+console.log('123' - 1);     // output 122 

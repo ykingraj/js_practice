@@ -59,42 +59,5 @@ function cl() {
 function show() {
     document.getElementById("result").innerText= val
     //alert(stm)
-    //alert(opt)
-
-    
+    //alert(opt)   
 }
-
-
-
-let ss 
-let oo
-val = 0
-
-
-for (let s = 1; s <= (stmlen-1); s++){
-    ss = Number(stm[s])
-    
-    for (let o = 0; o <= (optlen-1); o++){
-        oo = opt[o]
-
-        if (oo == "+"){
-
-            val += ss
-        }
-
-        if (oo == "-"){
-
-            val -= ss
-        }
-
-        if (oo == "/"){
-
-            val /= ss
-        }
-
-        if (oo == "*"){
-
-            val *= ss
-        } 
-    }
-}   
