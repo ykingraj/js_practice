@@ -76,6 +76,7 @@ function show() {
             oo = opt[c1]
             break
         }
+
         if (oo == "+"){  
             result += ss
         }
@@ -88,6 +89,7 @@ function show() {
         else if (oo == "*"){
             result *= ss
         } 
+        
         c1++
         c2++
     }
