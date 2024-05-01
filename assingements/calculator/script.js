@@ -1,6 +1,6 @@
 let x = ""
 let val = ""
-let result = "wroking on it"
+let result 
 let decimalpointer = -1
 let stm = []
 let stmlen = stm.length
@@ -10,7 +10,6 @@ let optlen = opt.length
 function valadd(a) {
     val = val + a
     document.getElementById("result").innerText= val
-    console.log ("553")
 }
 
 function valadd2() {
@@ -52,12 +51,55 @@ function funsub() {
 }
 
 function cl() {
-    val = "0"
+    val = " "
+    stm = []
+    opt = []
     document.getElementById("result").innerText= 0;
 }
 
 function show() {
-    document.getElementById("result").innerText= val
-    //alert(stm)
-    //alert(opt)   
+
+    stm.push(val)
+    val= " "
+    let ss 
+    let oo
+    result = stm[0]
+    let c1 = 0
+    let c2 = 1
+
+    for (let s = 0; s <= (stmlen-2); s++ ){
+        while( s <= stmlen-1 && c2< stm.length){
+            ss = stm[c2]
+            break
+        }
+        while( s <= optlen-1){
+            oo = opt[c1]
+            break
+        }
+        if (oo == "+"){  
+            result += ss
+        }
+        else if (oo == "-"){
+            result -= ss
+        }
+            else if (oo == "/"){
+            result /= ss 
+        }
+        else if (oo == "*"){
+            result *= ss
+        } 
+        c1++
+        c2++
+    }
+    console.log(result);
+    document.getElementById("result").innerText= result
+    alert(stm)
+    alert(opt)   
+}
+
+function cl() {
+    val = " "
+    stm = []
+    opt = []
+    document.getElementById("result").innerText= 0;
 }
