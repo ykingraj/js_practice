@@ -8,6 +8,11 @@ let stmlen = stm.length
 let opt = []
 let optlen = opt.length
 
+let ss 
+let oo
+let c1 = 0
+let c2 = 1 
+
 function valadd(a) {
     val = val + a
     val2= val2 + a
@@ -67,11 +72,8 @@ function cl() {
 function show() {
     stm.push(val)
     val= " "
-    let ss 
-    let oo
     result = stm[0]
-    let c1 = 0
-    let c2 = 1
+    
 
     for (let s = 0; s <= (stmlen-2); s++ ) {
         while( s <= stmlen-1 && c2< stm.length) {
