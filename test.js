@@ -1,6 +1,6 @@
-let stm = [5,2,5,5]
+let stm = [100,5,8,10]
 let stmlen = stm.length
-let opt = ["*","+","/"]
+let opt = ["/","+","-"]
 let optlen = opt.length
 let ss 
 let oo
@@ -26,33 +26,33 @@ for (let s = 0; s <= (stmlen-2); s++ ){
     
 
     if (oo == "+"){
-        console.log(val)  
-        console.log("+")
-        console.log(ss)      
+        //console.log(val)  
+        //console.log("+")
+        //console.log(ss)      
         val += ss
-        console.log(val)
+        //console.log(val)
         
     }
 
     else if (oo == "-"){
-        console.log(val)
-        console.log("-")
-        console.log(ss)
+        //console.log(val)
+        //console.log("-")
+        //console.log(ss)
         val -= ss
-        console.log(val)
+        //console.log(val)
         
     }
 
         else if (oo == "/"){
         val /= ss
         //console.log(val)
-        console.log("/")
+        //console.log("/")
     }
 
     else if (oo == "*"){
         val *= ss
         //console.log(val)
-        console.log("*")
+        //console.log("*")
     } 
 
     c1++
