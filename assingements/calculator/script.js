@@ -1,17 +1,16 @@
 let x = ""
 let val = ""
 let val2 = ""
-let result 
+let result
 let decimalpointer = -1
 let stm = []
 let stmlen = stm.length
 let opt = []
 let optlen = opt.length
-
-let ss 
-let oo
-let c1 = 0
-let c2 = 1 
+    let ss 
+    let oo
+    let c1 = 0
+    let c2 = 1
 
 function valadd(a) {
     val = val + a
@@ -72,15 +71,15 @@ function cl() {
 function show() {
     stm.push(val)
     val= " "
-    result = stm[0]
-    
-
-    for (let s = 0; s <= (stmlen-2); s++ ) {
-        while( s <= stmlen-1 && c2< stm.length) {
-            ss = stm[c2]
+    result = Number(stm[0])
+    let stmlenn = stm.length
+    let optlenn = opt.length
+    for (let s = 0; s <= (stmlenn-2); s++ ) {
+        while( s <= stmlenn-1 && c2 < stmlenn) {
+            ss = Number(stm[c2])
             break
         }
-        while( s <= optlen-1) {
+        while( s <= optlenn-1) {
             oo = opt[c1]
             break
         }
@@ -103,8 +102,8 @@ function show() {
     }
     console.log(result);
     document.getElementById("result").innerText= result
-    alert(stm)
-    alert(opt)   
+    //alert(stm)
+    //alert(opt)   
 }
 
 function cl() {
