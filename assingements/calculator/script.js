@@ -4,9 +4,7 @@ let val2 = ""
 let result
 let decimalpointer = -1
 let stm = []
-
 let opt = []
-
 let ss 
 let oo
 let c1 = 0
@@ -105,7 +103,7 @@ function show() {
     stm.push(result)
     console.log(result);
     document.getElementById("result").innerText= result
-    //alert(stm)
-    //alert(opt)   
+    alert(stm)
+    alert(opt)   
 }
 
