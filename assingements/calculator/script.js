@@ -1,5 +1,6 @@
 let x = ""
 let val = ""
+let val2 = ""
 let result 
 let decimalpointer = -1
 let stm = []
@@ -9,7 +10,8 @@ let optlen = opt.length
 
 function valadd(a) {
     val = val + a
-    document.getElementById("result").innerText= val
+    val2= val2 + a
+    document.getElementById("result").innerText= val2
 }
 
 function valadd2() {
@@ -18,36 +20,41 @@ function valadd2() {
     }  // nothing will happen
     else{
         val = val + "."
+        val2 = val2 + "."
     }
-    document.getElementById("result").innerText= val
+    document.getElementById("result").innerText= val2
 }
 
 function fundiv() {
     stm.push(val)
+    val2= val2 +  "/"
     opt.push("/")
     val= ""
-    document.getElementById("result").innerText= val
+    document.getElementById("result").innerText= val2
 }
 
 function fundmulti() {
     stm.push(val)
+    val2= val2 +  "*"
     opt.push("*")
     val= ""
-    document.getElementById("result").innerText= val
+    document.getElementById("result").innerText= val2
 }
 
 function funadd() {
     stm.push(val)
+    val2= val2 +  "+"
     opt.push("+")
     val= ""
-    document.getElementById("result").innerText= val
+    document.getElementById("result").innerText= val2
 }
 
 function funsub() {
     stm.push(val)
+    val2= val2 +  "-"
     opt.push("-")
     val= ""
-    document.getElementById("result").innerText= val
+    document.getElementById("result").innerText= val2
 }
 
 function cl() {
@@ -58,7 +65,6 @@ function cl() {
 }
 
 function show() {
-
     stm.push(val)
     val= " "
     let ss 
@@ -67,12 +73,12 @@ function show() {
     let c1 = 0
     let c2 = 1
 
-    for (let s = 0; s <= (stmlen-2); s++ ){
-        while( s <= stmlen-1 && c2< stm.length){
+    for (let s = 0; s <= (stmlen-2); s++ ) {
+        while( s <= stmlen-1 && c2< stm.length) {
             ss = stm[c2]
             break
         }
-        while( s <= optlen-1){
+        while( s <= optlen-1) {
             oo = opt[c1]
             break
         }
