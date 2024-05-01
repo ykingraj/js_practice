@@ -4,14 +4,22 @@ let val2 = ""
 let result
 let decimalpointer = -1
 let stm = []
-let stmlen = stm.length
-let opt = []
-let optlen = opt.length
-    let ss 
-    let oo
-    let c1 = 0
-    let c2 = 1
 
+let opt = []
+
+let ss 
+let oo
+let c1 = 0
+let c2 = 1
+
+function cl() {
+    val = " "
+    val2 = " "
+    stm = [ ]
+    opt = [ ]
+    document.getElementById("result").innerText= 0;
+}
+    
 function valadd(a) {
     val = val + a
     val2= val2 + a
@@ -61,16 +69,10 @@ function funsub() {
     document.getElementById("result").innerText= val2
 }
 
-function cl() {
-    val = " "
-    stm = []
-    opt = []
-    document.getElementById("result").innerText= 0;
-}
-
 function show() {
     stm.push(val)
     val= " "
+    val2 = " "
     result = Number(stm[0])
     let stmlenn = stm.length
     let optlenn = opt.length
@@ -100,15 +102,10 @@ function show() {
         c1++
         c2++
     }
+    stm.push(result)
     console.log(result);
     document.getElementById("result").innerText= result
     //alert(stm)
     //alert(opt)   
 }
 
-function cl() {
-    val = " "
-    stm = []
-    opt = []
-    document.getElementById("result").innerText= 0;
-}
