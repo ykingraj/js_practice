@@ -1,3 +1,38 @@
+
+
+let result = document.getElementById("result")
+let buttons = Array.from(document.getElementsByClassName("btn"))
+
+buttons.map((button) => {
+  button.addEventListener("click", (e) => {
+    if (result.innerText === "0" && e.target.innerText != "/" && e.target.innerText != "*") 
+    {
+      result.innerText = "";
+    }
+    if (e.target.innerText === "AC") 
+    {
+      result.innerText = "";
+    } 
+    else if (e.target.innerText === "=") 
+    {
+      try {
+        result.innerText = eval(result.innerText)
+      } 
+      catch 
+      {
+        result.innerText = "ERROR."
+      }
+    } 
+
+    else 
+    {
+      result.innerText += e.target.innerText
+    }
+  })
+})
+
+
+
 let x = ""
 let val = ""
 let val2 = ""
@@ -39,6 +74,7 @@ function fundiv() {
     stm.push(val)
     val2= val2 +  "/"
     opt.push("/")
+    stm.push("/")
     val= ""
     document.getElementById("result").innerText= val2
 }
@@ -47,6 +83,7 @@ function fundmulti() {
     stm.push(val)
     val2= val2 +  "*"
     opt.push("*")
+    stm.push("*")
     val= ""
     document.getElementById("result").innerText= val2
 }
@@ -55,6 +92,7 @@ function funadd() {
     stm.push(val)
     val2= val2 +  "+"
     opt.push("+")
+    stm.push("+")
     val= ""
     document.getElementById("result").innerText= val2
 }
@@ -63,6 +101,7 @@ function funsub() {
     stm.push(val)
     val2= val2 +  "-"
     opt.push("-")
+    stm.push("-")
     val= ""
     document.getElementById("result").innerText= val2
 }
@@ -71,6 +110,7 @@ function show() {
     stm.push(val)
     val= " "
     val2 = " "
+    /*
     result = Number(stm[0])
     let stmlenn = stm.length
     let optlenn = opt.length
@@ -100,10 +140,10 @@ function show() {
         c1++
         c2++
     }
-    stm.push(result)
+    */
+    //stm.push(result)
     console.log(result);
-    document.getElementById("result").innerText= result
+    document.getElementById("result").innerText= eval(stm)
     alert(stm)
     alert(opt)   
 }
-
