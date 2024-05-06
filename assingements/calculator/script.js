@@ -32,7 +32,7 @@ buttons.map((button) => {
 })
 
 
-
+/*
 let x = ""
 let val = ""
 let val2 = ""
@@ -140,10 +140,11 @@ function show() {
         c1++
         c2++
     }
-    */
+    
     //stm.push(result)
     console.log(result);
     document.getElementById("result").innerText= eval(stm)
     alert(stm)
     alert(opt)   
 }
+*/
